@@ -5,9 +5,11 @@ from random import randint
 class SomeList:
     """Листок с крестиками-ноликами"""
 
+    def __init__(self):
+        self.empty_list = []
+
     def generate_empty_list(self):
         """Генерация и вывод пустого листа"""
-        self.empty_list = []
         num = 1
         while num <= 9:
             for _ in range(3):
